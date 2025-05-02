@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>هدية عيد ميلاد ورسالة اعتذار</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- تأثير الانتقال الفضائي -->
+  <div class="warp-effect" style="display: none;"></div>
+
+  <!-- شاشة البداية: تهنئة عيد ميلاد -->
+  <div class="scene" id="scene1">
+    <div class="birthday-container">
+      <h1 class="birthday-title">🎉 كل عام وأنتِ بخير يا أغلى الناس 🎉</h1>
+      <p class="birthday-msg">اليوم يومك المميز... أتمنى لكِ عامًا مليئًا بالسعادة والنجاح والحب! 🌟</p>
+      <button class="start-btn" onclick="goToScene(2)">افتحي هديتكِ</button>
+    </div>
+  </div>
+
+  <!-- المشهد الثاني: رسالة اعتذار مؤثرة -->
+  <div class="scene" id="scene2" style="display: none;">
+    <div class="apology-container">
+      <h2 class="apology-title">💌 رسالة اعتذار 💌</h2>
+      <p class="apology-msg">
+        أعتذر لكِ من أعماق قلبي إن قصّرت أو أخطأت في حقكِ يومًا.<br>
+        أنتِ شخص غالٍ جدًا على قلبي، وأتمنى أن تسامحيني على أي لحظة ألم أو زعل.<br>
+        وجودكِ في حياتي هدية لا تقدر بثمن...<br>
+        <span class="apology-heart">❤️</span>
+      </p>
+      <button class="continue-btn" onclick="goToScene(4)">تابعي</button>
+    </div>
+  </div>
+
+  <!-- النجمة الأولى -->
+  <div class="scene" id="scene4" style="display: none;">
+    <div class="star-container">
+      <h2 class="star-title">النجمة الأولى</h2>
+      <div class="star-icon">🌟</div>
+      <div class="star-step">الخطوة الأولى: نور البداية</div>
+      <p class="star-msg">كل طريق مضيء يبدأ بخطوة شجاعة، حتى وإن كان القلب خائفًا.<br><br>"في داخلكِ ضوء لا يخبو، وإن خفت من المسير، تذكّري أن النور الحقيقي يولد من عمق الظلام."</p>
+      <button class="continue-btn" onclick="goToScene(5)">النجمة التالية</button>
+    </div>
+  </div>
+
+  <!-- النجمة الثانية -->
+  <div class="scene" id="scene5" style="display: none;">
+    <div class="star-container">
+      <h2 class="star-title">النجمة الثانية</h2>
+      <div class="star-icon">🌟</div>
+      <div class="star-step">الخطوة الثانية: صوت الحق</div>
+      <p class="star-msg">أن تكوني صوتًا للعدل، هو أن تكوني سيفًا من نور في عالم مرتبك.<br><br>"كلما دافعتِ عن مظلوم، تفتح الكون بابًا من نور لم تُرَ ملامحه بعد."</p>
+      <button class="continue-btn" onclick="goToScene(6)">النجمة التالية</button>
+    </div>
+  </div>
+
+  <!-- النجمة الثالثة -->
+  <div class="scene" id="scene6" style="display: none;">
+    <div class="star-container">
+      <h2 class="star-title">النجمة الثالثة</h2>
+      <div class="star-icon">🌟</div>
+      <div class="star-step">الخطوة الثالثة: هدوء العاصفة</div>
+      <p class="star-msg">الهدوء ليس صمتًا، بل حكمة قادرة على إسكات كل ضجيج داخلي.<br><br>"كوني تلك التي تمشي وسط العاصفة، لا لأنها لا تخاف، بل لأنها تعلم أن في داخلها سلامًا لا يُهزم."</p>
+      <button class="continue-btn" onclick="goToScene(7)">النجمة التالية</button>
+    </div>
+  </div>
+
+  <!-- النجمة الرابعة -->
+  <div class="scene" id="scene7" style="display: none;">
+    <div class="star-container">
+      <h2 class="star-title">النجمة الرابعة</h2>
+      <div class="star-icon">🌟</div>
+      <div class="star-step">الخطوة الرابعة: انعكاس الروح</div>
+      <p class="star-msg">الروح الطيبة لا تُخفى، تشعّ في كل نظرة، كل كلمة، وكل موقف عابر.<br><br>"إنكِ لا تحتاجين أن تبرهني شيئًا لأحد، حضوركِ بحد ذاته برهان على النور."</p>
+      <button class="continue-btn" onclick="goToScene(8)">النجمة التالية</button>
+    </div>
+  </div>
+
+  <!-- النجمة الخامسة -->
+  <div class="scene" id="scene8" style="display: none;">
+    <div class="star-container">
+      <h2 class="star-title">النجمة الخامسة</h2>
+      <div class="star-icon">🌟</div>
+      <div class="star-step">الخطوة الخامسة: قمة النور</div>
+      <p class="star-msg">حين تصلين، لا تنسي أن كل خطوة سابقة كانت نورًا، لا مجرد طريق.<br><br>"النور ليس غاية… هو أنتِ، وهو ما تتركينه خلفكِ في قلوب الآخرين."</p>
+      <button class="continue-btn" onclick="goToScene(9)">إلى الختام</button>
+    </div>
+  </div>
+
+  <!-- مشهد تسليم جزء من الهدية -->
+  <div class="scene" id="scene9" style="display: none;">
+    <div class="gift-container">
+      <h2 class="gift-title">لقد تم تسليم 35% من الهدية 🎁</h2>
+      <p class="birthday-msg">الباقي في الديسكورد 😉</p>
+      <button class="end-btn" onclick="goToScene(1)">إعادة التجربة</button>
+    </div>
+  </div>
+
+  <!-- المشهد الثالث: هدية نهائية -->
+  <div class="scene" id="scene3" style="display: none;">
+    <div class="gift-container">
+      <div class="gift-box">
+        <div class="lid"></div>
+        <div class="box"></div>
+        <div class="ribbon"></div>
+      </div>
+      <h2 class="gift-title">هذه هديتي البسيطة لكِ...<br>أتمنى أن تظل الابتسامة لا تفارق وجهكِ أبدًا! 🎁</h2>
+      <button class="end-btn" onclick="goToScene(1)">إعادة التجربة</button>
+    </div>
+  </div>
+
+  <!-- شريط التنقل -->
+  <div class="navigation-bar" style="display: none;">
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="scene-buttons">
+      <button onclick="navigateToScene(1)">المشهد الأول</button>
+      <button onclick="navigateToScene(2)">المشهد الثاني</button>
+      <button onclick="navigateToScene(3)">المشهد الثالث</button>
+    </div>
+  </div>
+
+  <!-- المشهد الثامن: الرسالة السرية -->
+  <div class="scene" id="scene8" style="display: none;">
+    <div class="secret-message">
+      <h2>رسالة سرية خاصة</h2>
+      <div class="message-content">
+        <p id="secretMessageText"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- مشغل الموسيقى -->
+  <audio id="birthday-music" src="music/birthday.mp3" preload="auto"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
